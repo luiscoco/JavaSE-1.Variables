@@ -57,3 +57,34 @@ MyClass myObject = new MyClass();
 final double PI = 3.14159;
 final int MAX_SIZE = 100;
 ```
+
+## Variable scope
+
+In Java, variable scope refers to the region of the code where a variable can be accessed. 
+
+There are mainly two types of variables in terms of scope: local variables and instance variables (attributes).
+
+### Local Variables
+Local variables are declared within a method, constructor, or block of code.
+
+They are only accessible within the block of code where they are declared.
+
+Local variables must be explicitly initialized before use.
+
+```java
+public class MyClass {
+    // Instance variable (attribute)
+    private int globalVar; // Initialized to default value (0 for int)
+
+    public void myMethod() {
+        // Local variable
+        int localVar = 10; // Initialized to default value (0 for int)
+
+        // Accessing both local and instance variables
+        System.out.println("Local Variable: " + localVar);
+        System.out.println("Instance Variable: " + globalVar);
+    }
+}
+```
+
+### 
