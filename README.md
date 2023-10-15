@@ -116,3 +116,24 @@ public class MyClass {
     }
 }
 ```
+
+### Default Initialization:
+
+If you declare an instance variable but don't provide an initial value, it gets the default value for its type.
+
+Default values are 0 for numeric types, false for boolean, and null for objects.
+
+```java
+public class DefaultInitialization {
+    // Instance variables with default initialization
+    private int number;
+    private boolean flag;
+    private Object obj;
+
+    public void displayInfo() {
+        System.out.println("Number: " + number);
+        System.out.println("Flag: " + flag);
+        System.out.println("Object: " + obj);
+    }
+}
+```
