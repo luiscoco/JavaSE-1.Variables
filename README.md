@@ -1,6 +1,6 @@
 # JavaSE-Variables
 
-## Variables declaration
+## 1. Variables declaration
 
 In Java, you declare variables to store and manipulate data. 
 
@@ -18,7 +18,7 @@ In these examples:
 
 When declaring a variable, you specify its type, followed by the variable name, an equal sign (=), and the initial value. The initial value is optional, and you can declare a variable without assigning a value if you plan to assign it later.
 
-### Primitive Data Types
+### 1.1. Primitive Data Types
 
 ```java
 // Integer types
@@ -37,7 +37,7 @@ char grade = 'A';
 boolean isJavaFun = true;
 ```
 
-### Reference Data Types
+### 1.2. Reference Data Types
 
 ```java
 // Strings
@@ -51,20 +51,20 @@ String[] names = {"Alice", "Bob", "Charlie"};
 MyClass myObject = new MyClass();
 ```
 
-### Constants (using final keyword)
+### 1.3. Constants (using final keyword)
 
 ```java
 final double PI = 3.14159;
 final int MAX_SIZE = 100;
 ```
 
-## Variable scope
+## 2. Variable scope
 
 In Java, variable scope refers to the region of the code where a variable can be accessed. 
 
 There are mainly two types of variables in terms of scope: local variables and instance variables (attributes).
 
-### Local Variables
+### 2.1. Local Variables
 Local variables are declared within a method, constructor, or block of code.
 
 They are only accessible within the block of code where they are declared.
@@ -87,4 +87,32 @@ public class MyClass {
 }
 ```
 
-### 
+### 2.2. Instance Variables (Attributes)
+
+Instance variables (or attributes) are declared within a class but outside any method, constructor, or block.
+
+They are part of the object's state and have default values if not explicitly initialized.
+
+For example, numeric types are initialized to 0, objects to null, and booleans to false.
+
+```java
+public class MyClass {
+    // Instance variables (attributes)
+    private int age;      // Initialized to default value (0 for int)
+    private String name;   // Initialized to default value (null for objects)
+
+    public void setAge(int newAge) {
+        age = newAge;
+    }
+
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    public void displayInfo() {
+        // Accessing instance variables
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+```
