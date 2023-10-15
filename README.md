@@ -1,2 +1,59 @@
 # JavaSE-Variables
-JavaSE-Variables
+
+## Variables declaration
+
+In Java, you declare variables to store and manipulate data. 
+
+In these examples:
+
+- int, short, long, float, double, char, and boolean are primitive data types.
+
+- String is a class for representing strings.
+
+- Arrays allow you to store multiple values of the same type in a single variable.
+
+- Objects are instances of classes and are created using the new keyword.
+
+- Constants are declared using the final keyword and are typically written in uppercase.
+
+When declaring a variable, you specify its type, followed by the variable name, an equal sign (=), and the initial value. The initial value is optional, and you can declare a variable without assigning a value if you plan to assign it later.
+
+### Primitive Data Types
+
+```java
+// Integer types
+int age = 25;
+short numberOfCars = 2;
+long totalPopulation = 1500000000L; // Use 'L' for long literals
+
+// Floating-point types
+float temperature = 98.6f; // Use 'f' for float literals
+double distance = 1500.75;
+
+// Character type
+char grade = 'A';
+
+// Boolean type
+boolean isJavaFun = true;
+```
+
+### Reference Data Types
+
+```java
+// Strings
+String message = "Hello, World!";
+
+// Arrays
+int[] numbers = {1, 2, 3, 4, 5};
+String[] names = {"Alice", "Bob", "Charlie"};
+
+// Objects
+MyClass myObject = new MyClass();
+```
+
+### Constants (using final keyword)
+
+```java
+final double PI = 3.14159;
+final int MAX_SIZE = 100;
+```
