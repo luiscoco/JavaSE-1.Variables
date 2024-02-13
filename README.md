@@ -1,5 +1,7 @@
 # JavaSE-Variables
 
+See the Udemy course: https://www.udemy.com/course/curso-certificacion-profesional-desarrollador-java-se-11
+
 ## 1. Variables declaration
 
 In Java, you declare variables to store and manipulate data. 
